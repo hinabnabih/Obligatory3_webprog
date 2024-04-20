@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kjøp av kinobiletter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Kjøp av kinobiletter</h1>
+    <form id="Bookingskjema">
+        <div class="form-group">
+            <label for="film">Velg film:</label>
+            <select id="film" name="film" class="form-control" required>
+                <option value="">Velg film :) </option>
+                <option value="Barbie">Barbie</option>
+                <option value="Anyone but you">Anyone but you</option>
+                <option value="Night swim">Night swim</option>
+                <option value="Mean girls 2">Mean girls 2</option>
+                <option value="Inside out 2">Inside out 2</option>
+                <option value="Kungfu panda 4">Kungfu panda 4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="kvantitet">Antall billetter:</label>
+            <input type="number" id="kvantitet" name="kvantitet" class="form-control" min="1" required>
+        </div>
+        <div class="form-group">
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" id="fornavn" class="form-control" placeholder="Skriv inn ditt fornavn" required>
+        </div>
+        <div class="form-group">
+            <label for="etternavn">Etternavn:</label>
+            <input type="text" id="etternavn" class="form-control" placeholder="Skriv inn ditt etternavn" required>
+        </div>
+        <div class="form-group">
+            <label for="telefonnummer">Tlf-nummer:</label>
+            <input type="tel" id="telefonnummer" class="form-control" placeholder="Skriv inn et gyldig nummer" pattern="[0-9]{8}" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="Skriv inn din email adresse" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Kjøp billett</button>
+    </form>
+
+    <div id="BilettListe" class="mt-4">
+        <h2>Mine bilettter</h2>
+        <ul id="Biletter" class="list-group"></ul>
+        <button type="button" id="slettBiletter" class="btn btn-danger mt-3">Slett mine biletter</button>
+    </div>
+</div>
+
+<script src="booke.js"></script>
+</body>
+</html>
