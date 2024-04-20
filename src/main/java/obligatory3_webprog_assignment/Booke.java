@@ -1,7 +1,6 @@
 package obligatory3_webprog_assignment;
 
 public class Booke {
-    private Long id;
     private String film;
     private int kvantitet;
     private String fornavn;
@@ -10,20 +9,21 @@ public class Booke {
     private String email;
 
 
-    public Booke() {
+    public Booke(String film, int kvantitet, String fornavn, String etternavn, String telefonnummer, String email) {
+        this.film=film;
+        this.kvantitet=kvantitet;
+        this.fornavn=fornavn;
+        this.etternavn=etternavn;
+        this.telefonnummer=telefonnummer;
+        this.email=email;
+    }
+    public Booke(){
+
     }
 
     // Getters og setters for alle feltene
 
-    public Long getId() {
 
-        return id;
-    }
-
-    public void setId(Long id) {
-
-        this.id = id;
-    }
 
     public String getFilm() {
 
