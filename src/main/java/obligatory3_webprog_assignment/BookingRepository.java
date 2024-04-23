@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collections;
 import java.util.List;
 
 @Repository
@@ -21,9 +22,13 @@ public class BookingRepository {
     public List<Booke> hentAlleBookinger(){
         String sql="SELECT * FROM Booke";
         List <Booke> alleBooker = db.query(sql, new BeanPropertyRowMapper(Booke.class));
+        Collections.sort(alleBooker);
         return alleBooker;
     }
-
+    public void slettEnBooking(Long id) {
+        String sql = "DELETE FROM Booke WHERE id = ?";
+        db.update(sql, id);
+    }
     public void slettAlleBookinger(){
         String sql="DELETE FROM Booke";
         db.update(sql);

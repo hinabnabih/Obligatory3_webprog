@@ -1,6 +1,9 @@
 package obligatory3_webprog_assignment;
 
-public class Booke {
+    public class Booke implements Comparable<Booke> {
+
+
+    private int id;
     private String film;
     private int kvantitet;
     private String fornavn;
@@ -9,7 +12,8 @@ public class Booke {
     private String email;
 
 
-    public Booke(String film, int kvantitet, String fornavn, String etternavn, String telefonnummer, String email) {
+    public Booke(int id, String film, int kvantitet, String fornavn, String etternavn, String telefonnummer, String email) {
+        this.id=id;
         this.film=film;
         this.kvantitet=kvantitet;
         this.fornavn=fornavn;
@@ -24,6 +28,14 @@ public class Booke {
     // Getters og setters for alle feltene
 
 
+    public int getId() {
+
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFilm() {
 
@@ -83,5 +95,9 @@ public class Booke {
     public void setEmail(String email) {
 
         this.email = email;
+    }
+    public int compareTo(Booke b){
+
+        return this.etternavn.compareTo(b.etternavn);
     }
 }
