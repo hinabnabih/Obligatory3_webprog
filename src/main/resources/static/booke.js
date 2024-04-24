@@ -23,8 +23,8 @@ function lagreBooking() {
         return;
     }
     const url = "/lagreBooking";
-    $.post(url, bookinger, function (data) {
-       console.log(data);
+    $.post(url, bookinger, function () {
+       hentAlleBookinger();
     });
 }
 function hentAlleBookinger(){
