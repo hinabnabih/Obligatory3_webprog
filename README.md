@@ -16,9 +16,8 @@ Fremgangsmåte:
 9. Du kan slette enkelte biletter, ved å trykke på slett-knappen ved bilettene du ønsker å slette.
 
 Inputvalidering: 
--Hvis du skriver email etter riktig format- vil det ikke være mulig å fullføre bestillingen,
-og du får opp på localhost at du må oppgi riktig email.
--Det samme gjelder telefonnummer, og dersom du har tomme felt som må fylles ut.
+1. Hvis du skriver email etter riktig format vil det ikke være mulig å fullføre bestillingen, og du får opp feilmedling på localhost om at du må oppgi riktig email.
+2. Det samme gjelder telefonnummer, og dersom du har tomme felt som må fylles ut.
 
 
 
