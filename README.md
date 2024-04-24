@@ -1,4 +1,5 @@
 Kinobilettbestilling 
+
 Dette er en enkel kinobilettbestilling som lar deg velge en film og antallet biletter. Deretter må du fylle ut personlig info for å kunne fullføre bestillingen.
 Bestillingene lagres i en tabell på en relasjonsdatabase (h2-in memory database)
 Når du trykker 'Kjøp bilett'-knappen, blir listen med bestillinger sendt fra server til klient, og sortert etter etternavn.
